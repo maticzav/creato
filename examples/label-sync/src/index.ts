@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { creato, Template } from 'creato'
 import * as meow from 'meow'
 
