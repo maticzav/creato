@@ -2,37 +2,27 @@
 
 import * as path from 'path'
 import * as fs from 'fs'
-import * as meow from 'meow'
 import * as ora from 'ora'
 import * as inquirer from 'inquirer'
 import * as mkdirp from 'mkdirp'
 
 import { loadTemplate, Template } from './loader'
 
+export interface Options {
+  force: boolean
+}
+
 /**
  *
  * Creates a CLI tool from description and templates.
  *
- * @param description
  * @param templates
+ * @param options
  */
 export async function creato(
-  description: string,
   templates: Template[],
+  options: Options,
 ): Promise<void> {
-  /**
-   * CLI handler
-   */
-  const cli = meow(description, {
-    flags: {
-      force: {
-        type: 'boolean',
-        alias: 'f',
-        default: false,
-      },
-    },
-  })
-
   /**
    * Inquier about template
    */
@@ -58,7 +48,7 @@ export async function creato(
 
   const absoluteDist = path.resolve(process.cwd(), dist)
 
-  if (fs.existsSync(absoluteDist) && !cli.flags.force) {
+  if (fs.existsSync(absoluteDist) && !options.force) {
     console.warn(`Directory ${absoluteDist} must be empty.`)
     return process.exit(1)
   } else {

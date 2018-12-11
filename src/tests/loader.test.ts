@@ -126,12 +126,12 @@ describe('bin', () => {
     try {
       const res = await loadTemplate(
         {
-          name: 'json',
-          description: 'JSON template with basic CircleCI config.',
+          name: 'test-template',
+          description: 'test-template description',
           repo: {
-            uri: 'https://github.com/maticzav/label-sync',
+            uri: 'https://github.com/maticzav/creato',
             branch: 'master',
-            path: '/examples/with-circleci',
+            path: '/examples/create-boilerplates',
           },
         },
         dist,
@@ -143,7 +143,6 @@ describe('bin', () => {
       })
       expect(fs.existsSync(path.resolve(dist, 'package.json'))).toBe(true)
     } catch (err) {
-      throw err
       fail()
     }
   })
