@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install monorepo
+          name: Install dependencies
           command: yarn install
       - run:
           name: Test packages
@@ -21,7 +21,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install monorepo
+          name: Install dependencies
           command: yarn install
       - run:
           name: Release packages
