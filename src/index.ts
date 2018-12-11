@@ -1,5 +1,2 @@
-/* Defaults */
-import { creato } from './creato'
-export default creato
-/* Exports */
-export { Template, loadTemplate } from './loader'
+export { creato, Options } from './creato'
+export { Template, TemplateRepository, loadTemplate } from './loader'

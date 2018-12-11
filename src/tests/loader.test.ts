@@ -131,7 +131,7 @@ describe('bin', () => {
           repo: {
             uri: 'https://github.com/maticzav/creato',
             branch: 'master',
-            path: '/examples/create-boilerplates',
+            path: '/examples/label-sync',
           },
         },
         dist,

@@ -1,10 +1,10 @@
 {
-  "name": "create-boilerplates",
-  "description": "Common boilerplates scaffolding tool.",
+  "name": "label-sync",
+  "description": "Label sync manager scaffolding tool.",
   "version": "1.0.0",
   "main": "dist/index.js",
   "bin": {
-    "create-boilerplates": "./dist/index.js"
+    "label-sync": "./dist/index.js"
   },
   "files": [
     "dist"
