@@ -1,5 +1,11 @@
 <p align="center"><img src="media/logo.png" width="200"/></p>
 
+# creato
+
+[![CircleCI](https://circleci.com/gh/maticzav/creato/tree/master.svg?style=shield)](https://circleci.com/gh/maticzav/creato/tree/master)
+[![codecov](https://codecov.io/gh/maticzav/creato/branch/master/graph/badge.svg)](https://codecov.io/gh/maticzav/creato)
+[![npm version](https://badge.fury.io/js/creato.svg)](https://badge.fury.io/js/creato)
+
 > create-app for any occasion.
 
 `creato` helps you build `create-app` tool to help your customers scaffold their project more easily and more quickly.
