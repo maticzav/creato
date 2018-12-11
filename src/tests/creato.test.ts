@@ -3,7 +3,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import * as mkdirp from 'mkdirp'
 
-import creato from '../'
+import { creato } from '../'
 
 import * as loader from '../loader'
 
