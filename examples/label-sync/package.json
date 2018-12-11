@@ -13,9 +13,11 @@
     "build": "tsc -d"
   },
   "dependencies": {
-    "creato": "1.0.0"
+    "creato": "1.0.0",
+    "meow": "^5.0.0"
   },
   "devDependencies": {
+    "@types/meow": "^5.0.0",
     "prettier": "^1.15.3",
     "typescript": "3.2.2"
   },

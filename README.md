@@ -24,6 +24,8 @@ yarn add creato
 
 ## Example
 
+<p align="center"><img src="media/example.gif" width="700"/></p>
+
 ```ts
 import { creato, Template } from 'creato'
 import * as meow from 'meow'
