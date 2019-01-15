@@ -67,10 +67,10 @@ export async function creato(
   if (res.status === 'ok') {
     spinner.succeed()
     console.log(res.message)
-    return process.exit(0)
+    return Promise.resolve();
   } else {
     spinner.fail()
     console.warn(res.message)
-    return process.exit(1)
+    return Promise.reject();
   }
 }
