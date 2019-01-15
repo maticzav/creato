@@ -22,7 +22,7 @@ export interface Options {
 export async function creato(
   templates: Template[],
   options: Options,
-): Promise<void> {
+): Promise<Template> {
   /**
    * Inquier about template
    */
@@ -67,7 +67,7 @@ export async function creato(
   if (res.status === 'ok') {
     spinner.succeed()
     console.log(res.message)
-    return Promise.resolve();
+    return Promise.resolve(template);
   } else {
     spinner.fail()
     console.warn(res.message)
