@@ -311,10 +311,10 @@
     "@types/rx-lite-time" "*"
     "@types/rx-lite-virtualtime" "*"
 
-"@types/tar@4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@types/tar/-/tar-4.0.0.tgz#e3239d969eeb693a012200613860d0eb871c94f0"
-  integrity sha512-YybbEHNngcHlIWVCYsoj7Oo1JU9JqONuAlt1LlTH/lmL8BMhbzdFUgReY87a05rY1j8mfK47Del+TCkaLAXwLw==
+"@types/tar@4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@types/tar/-/tar-4.0.1.tgz#a2d496f286f992cf5cc2e41b4d56fee9f20e4e5b"
+  integrity sha512-wsj22XS8Zp9HX6P4szXHa9jLjSP4GoBsDww8awZBS9I0CzxRmvWIK7zh9kHooJIMvCK6MhYtc+xTaVDUs7iTfQ==
   dependencies:
     "@types/node" "*"
 
