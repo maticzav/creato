@@ -164,6 +164,13 @@
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.13.tgz#c81484b6f4ca007bb09887ed15ecb3286d58f928"
   integrity sha512-ePl4l+7dLLmCucIwgQHAgjiepY++qcI6nb8eAwGNkB6OxmTe3Z9rQU3rSpomqu42PCCnlThZbOoxsf+qylJsLA==
 
+"@types/minipass@*":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@types/minipass/-/minipass-2.2.0.tgz#51ad404e8eb1fa961f75ec61205796807b6f9651"
+  integrity sha512-wuzZksN4w4kyfoOv/dlpov4NOunwutLA/q7uc00xU02ZyUY+aoM5PWIXEKBMnm0NHd4a+N71BMjq+x7+2Af1fg==
+  dependencies:
+    "@types/node" "*"
+
 "@types/mkdirp@0.5.2":
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/@types/mkdirp/-/mkdirp-0.5.2.tgz#503aacfe5cc2703d5484326b1b27efa67a339c1f"
@@ -311,11 +318,12 @@
     "@types/rx-lite-time" "*"
     "@types/rx-lite-virtualtime" "*"
 
-"@types/tar@4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@types/tar/-/tar-4.0.1.tgz#a2d496f286f992cf5cc2e41b4d56fee9f20e4e5b"
-  integrity sha512-wsj22XS8Zp9HX6P4szXHa9jLjSP4GoBsDww8awZBS9I0CzxRmvWIK7zh9kHooJIMvCK6MhYtc+xTaVDUs7iTfQ==
+"@types/tar@4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@types/tar/-/tar-4.0.2.tgz#c0fc78bb12e736b705412040a12e601c9384a712"
+  integrity sha512-iVAnZlJdez8evBXxan4YEEUCBJ3ML8tyRh30jUzr5QvJLj+BKbOTbHoTbb4F8vKvPJHFCmzgf4KypQKH63lpvg==
   dependencies:
+    "@types/minipass" "*"
     "@types/node" "*"
 
 "@types/through@*":
