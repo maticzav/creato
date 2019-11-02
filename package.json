@@ -25,7 +25,7 @@
     "request": "^2.88.0",
     "tar": "^4.4.7",
     "tmp": "^0.1.0",
-    "update-notifier": "^2.5.0"
+    "update-notifier": "^3.0.0"
   },
   "devDependencies": {
     "@types/inquirer": "0.0.44",
