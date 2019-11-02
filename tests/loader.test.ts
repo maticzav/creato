@@ -3,32 +3,14 @@ import * as fs from 'fs'
 import * as tmp from 'tmp'
 import * as path from 'path'
 import * as mkdirp from 'mkdirp'
+import * as rimraf from 'rimraf'
 
-import { loadTemplate } from '../'
+import { loadTemplate } from '../src/'
 
 describe('bin', () => {
   beforeEach(() => {
     jest.restoreAllMocks()
-  })
-
-  test('loadTemplate loads template correctly', async () => {
-    const res = await loadTemplate(
-      {
-        name: 'test-template',
-        description: 'test-description',
-        repo: {
-          branch: 'test-branch',
-          uri: 'test-uri',
-          path: 'test-path',
-        },
-      },
-      'path',
-    )
-
-    expect(res).toEqual({
-      status: 'ok',
-      message: 'Successfully installed template.',
-    })
+    rimraf.sync(path.resolve(__dirname, '__tmp__'))
   })
 
   test('loadTemplate returns error on bad download', async () => {

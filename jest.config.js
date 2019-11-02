@@ -1,5 +1,5 @@
 module.exports = {
-  roots: ['<rootDir>/src'],
+  roots: ['<rootDir>/src', '<rootDir>/tests'],
   testEnvironment: 'node',
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
@@ -13,6 +13,7 @@ module.exports = {
     '!**/node_modules/**',
     '!**/vendor/**',
     '!**/generated/**',
+    '!**/__tmp__/**',
   ],
   verbose: true,
   coverageDirectory: './coverage',

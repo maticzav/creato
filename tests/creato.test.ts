@@ -3,9 +3,9 @@ import * as fs from 'fs'
 import * as path from 'path'
 import * as mkdirp from 'mkdirp'
 
-import { creato } from '../'
+import { creato } from '../src'
 
-import * as loader from '../loader'
+import * as loader from '../src/loader'
 
 describe('bin', () => {
   beforeEach(() => {
@@ -24,11 +24,15 @@ describe('bin', () => {
       .mockResolvedValueOnce({ dist: dist })
     const fsExistsSyncMock = jest.spyOn(fs, 'existsSync').mockReturnValue(true)
     const fsMkdirSync = jest.spyOn(mkdirp, 'sync')
-    const consoleLogMock = jest.spyOn(console, 'log').mockReturnValue({})
-    const consoleWarnMock = jest.spyOn(console, 'warn').mockReturnValue({})
+    const consoleLogMock = jest
+      .spyOn(console, 'log')
+      .mockImplementation(() => {})
+    const consoleWarnMock = jest
+      .spyOn(console, 'warn')
+      .mockImplementation(() => {})
     const loadTemplateMock = jest.spyOn(loader, 'loadTemplate')
     const processExitMock = jest
-      .spyOn(process, 'exit')
+      .spyOn<any, any>(process, 'exit')
       .mockImplementation(() => {})
 
     /**
@@ -81,13 +85,15 @@ describe('bin', () => {
     const fsExistsSyncMock = jest.spyOn(fs, 'existsSync').mockReturnValue(false)
     const fsMkdirSync = jest
       .spyOn(mkdirp, 'sync')
-      .mockImplementation(() => false)
-    const consoleLogMock = jest.spyOn(console, 'log').mockReturnValue({})
+      .mockImplementation(() => null)
+    const consoleLogMock = jest
+      .spyOn(console, 'log')
+      .mockImplementation(() => {})
     const loadTemplateMock = jest
       .spyOn(loader, 'loadTemplate')
       .mockResolvedValue({ status: 'ok', message: 'pass' })
     const processExitMock = jest
-      .spyOn(process, 'exit')
+      .spyOn<any, any>(process, 'exit')
       .mockImplementation(() => {})
 
     /**
@@ -137,13 +143,15 @@ describe('bin', () => {
     const fsExistsSyncMock = jest.spyOn(fs, 'existsSync').mockReturnValue(false)
     const fsMkdirSync = jest
       .spyOn(mkdirp, 'sync')
-      .mockImplementation(() => false)
-    const consoleLogMock = jest.spyOn(console, 'log').mockReturnValue({})
+      .mockImplementation(() => null)
+    const consoleLogMock = jest
+      .spyOn(console, 'log')
+      .mockImplementation(() => {})
     const loadTemplateMock = jest
       .spyOn(loader, 'loadTemplate')
       .mockResolvedValue({ status: 'ok', message: 'pass' })
     const processExitMock = jest
-      .spyOn(process, 'exit')
+      .spyOn<any, any>(process, 'exit')
       .mockImplementation(() => {})
 
     /**
@@ -193,14 +201,18 @@ describe('bin', () => {
     const fsExistsSyncMock = jest.spyOn(fs, 'existsSync').mockReturnValue(false)
     const fsMkdirSync = jest
       .spyOn(mkdirp, 'sync')
-      .mockImplementation(() => false)
-    const consoleLogMock = jest.spyOn(console, 'log').mockReturnValue({})
-    const consoleWarnMock = jest.spyOn(console, 'warn').mockReturnValue({})
+      .mockImplementation(() => null)
+    const consoleLogMock = jest
+      .spyOn(console, 'log')
+      .mockImplementation(() => {})
+    const consoleWarnMock = jest
+      .spyOn(console, 'warn')
+      .mockImplementation(() => {})
     const loadTemplateMock = jest
       .spyOn(loader, 'loadTemplate')
       .mockResolvedValue({ status: 'err', message: 'pass' })
     const processExitMock = jest
-      .spyOn(process, 'exit')
+      .spyOn<any, any>(process, 'exit')
       .mockImplementation(() => {})
 
     /**
