@@ -25,7 +25,7 @@
     "request": "^2.88.0",
     "tar": "^6.0.0",
     "tmp": "^0.2.0",
-    "update-notifier": "^3.0.0"
+    "update-notifier": "^4.0.0"
   },
   "devDependencies": {
     "@types/inquirer": "6.5.0",
@@ -38,7 +38,7 @@
     "@types/rimraf": "2.0.4",
     "@types/tar": "4.0.3",
     "@types/tmp": "0.2.0",
-    "@types/update-notifier": "2.5.1",
+    "@types/update-notifier": "4.1.1",
     "codecov": "3.7.0",
     "husky": "3.1.0",
     "jest": "24.9.0",
