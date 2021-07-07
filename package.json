@@ -34,7 +34,7 @@
     "@types/node": "12.20.16",
     "@types/ora": "3.2.0",
     "@types/parse-github-url": "1.0.0",
-    "@types/request": "2.48.5",
+    "@types/request": "2.48.6",
     "@types/rimraf": "2.0.4",
     "@types/tar": "4.0.5",
     "@types/tmp": "0.2.1",
