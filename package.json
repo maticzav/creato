@@ -17,7 +17,7 @@
     "release": "semantic-release"
   },
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^4.0.0",
     "inquirer": "^7.0.0",
     "mkdirp": "^0.5.1",
     "ora": "^4.1.1",
