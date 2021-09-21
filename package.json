@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@types/inquirer": "6.5.0",
-    "@types/jest": "24.9.1",
+    "@types/jest": "27.0.2",
     "@types/mkdirp": "0.5.2",
     "@types/node": "12.20.25",
     "@types/ora": "3.2.0",
