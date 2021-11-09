@@ -19,7 +19,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "inquirer": "^7.0.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.0",
     "ora": "^4.1.1",
     "parse-github-url": "^1.0.2",
     "request": "^2.88.0",
@@ -30,7 +30,7 @@
   "devDependencies": {
     "@types/inquirer": "6.5.0",
     "@types/jest": "24.9.1",
-    "@types/mkdirp": "0.5.2",
+    "@types/mkdirp": "1.0.2",
     "@types/node": "12.20.37",
     "@types/ora": "3.2.0",
     "@types/parse-github-url": "1.0.0",
