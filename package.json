@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "chalk": "^2.4.2",
-    "inquirer": "^7.0.0",
+    "inquirer": "^8.0.0",
     "mkdirp": "^0.5.1",
     "ora": "^4.1.1",
     "parse-github-url": "^1.0.2",
@@ -28,7 +28,7 @@
     "update-notifier": "^3.0.0"
   },
   "devDependencies": {
-    "@types/inquirer": "6.5.0",
+    "@types/inquirer": "8.2.1",
     "@types/jest": "24.9.1",
     "@types/mkdirp": "0.5.2",
     "@types/node": "12.20.37",
