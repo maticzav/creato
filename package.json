@@ -33,7 +33,7 @@
     "@types/mkdirp": "0.5.2",
     "@types/node": "12.20.55",
     "@types/ora": "3.2.0",
-    "@types/parse-github-url": "1.0.0",
+    "@types/parse-github-url": "1.0.1",
     "@types/request": "2.48.8",
     "@types/rimraf": "2.0.5",
     "@types/tar": "4.0.5",
