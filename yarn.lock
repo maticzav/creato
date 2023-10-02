@@ -566,10 +566,10 @@
   dependencies:
     ora "*"
 
-"@types/parse-github-url@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@types/parse-github-url/-/parse-github-url-1.0.0.tgz#9e5f78297c42c717123bfcc39e1e9754a6099d0b"
-  integrity sha512-YNsYjdFmlfwIUGc47jfkb4BvFH9rdVbw80DxqSIQzQ3QpgaekmH2BcGKmEENzQRkeODoT/GiDrsJeztni+diAQ==
+"@types/parse-github-url@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@types/parse-github-url/-/parse-github-url-1.0.1.tgz#119bd9b462d3eea1eed3809c87fff0079c2f939d"
+  integrity sha512-A3ijZN6krCXaT7jCRGHwp35DVL9M3zYFWazmYE8YVaqijMpLej2TV5a9lk1BLwaCmWVT7c/9YfsX02IvlC3U5w==
   dependencies:
     "@types/node" "*"
 
