@@ -37,7 +37,7 @@
     "@types/request": "2.48.11",
     "@types/rimraf": "2.0.5",
     "@types/tar": "4.0.5",
-    "@types/tmp": "0.2.4",
+    "@types/tmp": "0.2.5",
     "@types/update-notifier": "2.5.2",
     "codecov": "3.8.2",
     "husky": "3.1.0",
